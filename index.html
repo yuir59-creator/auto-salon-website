@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автосалон — продажа легковых авто</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">AutoDrive</div>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="actions">
+        <span class="phone">+7 (999) 000-00-00</span>
+        <button class="primary-btn" type="button">Заказать звонок</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Легковые автомобили: новые и проверенные</h1>
+          <p>Гарантия, тест‑драйв, кредит и трейд‑ин</p>
+
+          <form class="filter-form" id="filterForm">
+            <select id="brandFilter" aria-label="Выберите марку">
+              <option value="all">Любая марка</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Kia">Kia</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Volkswagen">Volkswagen</option>
+            </select>
+
+            <select id="bodyFilter" aria-label="Выберите кузов">
+              <option value="all">Любой кузов</option>
+              <option value="Седан">Седан</option>
+              <option value="Хэтчбек">Хэтчбек</option>
+              <option value="Кроссовер">Кроссовер</option>
+            </select>
+
+            <input id="priceFrom" type="number" placeholder="От, ₽" aria-label="Цена от" />
+            <input id="priceTo" type="number" placeholder="До, ₽" aria-label="Цена до" />
+
+            <button class="primary-btn" type="submit">Подобрать авто</button>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Преимущества</h2>
+        <div class="features">
+          <article class="feature-card">
+            <h3>Гарантия</h3>
+            <p>На все автомобили действует гарантия.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Тест‑драйв</h3>
+            <p>Запишитесь на тест‑драйв прямо сейчас.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Кредит и трейд‑ин</h3>
+            <p>Выгодные условия покупки в кредит и обмен авто.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Проверка истории</h3>
+            <p>Полная проверка по VIN и базам ГИБДД.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="catalog">
+        <h2 class="section-title">Популярные авто</h2>
+        <div class="cars-grid" id="carsGrid"></div>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <div class="footer-grid">
+        <div id="about">
+          <h4>AutoDrive</h4>
+          <p>Продажа легковых автомобилей.<br />Работаем ежедневно с 09:00 до 21:00.</p>
+        </div>
+
+        <div>
+          <h4>Контакты</h4>
+          <p>+7 (999) 000-00-00<br />info@autodrive.ru</p>
+        </div>
+
+        <div>
+          <h4>Ссылки</h4>
+          <p>
+            <a href="#about">О нас</a><br />
+            <a href="#">Политика конфиденциальности</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
